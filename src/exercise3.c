@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
 
     if (k >= 0) {
         for (int i = 0; i < k; i++) {
-            printf("%.2f ", array[9-i]);
+            printf("%.2f ", array[i+k]);
         }
         for (int i = 0; i < 10 - k; i++){
             printf("%.2f ", array[i]);
