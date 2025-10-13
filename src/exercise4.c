@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
     for (int i = 0; i < k; i++) {
         printf("%.1lf ", array[i]);
     }
-    printf("%.1lf ", x);
+    printf("%.2lf ", x);
 
     for (int i = k; i < 9; i++) {
         printf("%.1lf ", array[i]);
