@@ -8,18 +8,21 @@ int main(int argc, char** argv) {
     double m1[m][n];
     double m2[n][q];
     double m3[m][q];
- 
+
+    //input
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
             scanf("%lf", &m1[i][j]);
         }
     }
+
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < q; j++) {
             scanf("%lf", &m2[i][j]);
         }
     }
 
+    //calculating
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < q; j++) {
             m3[i][j] = 0;
@@ -28,6 +31,8 @@ int main(int argc, char** argv) {
             }
         }
     }
+
+    //output
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < q; j++) {
             printf("%.2lf ", m3[i][j]);
