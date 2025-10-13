@@ -9,22 +9,26 @@ int main(int argc, char** argv) {
         scanf("%lf", &array[i]);
     }
 
-    if (k >= 0) {
-        for (int i = 0; i < k; i++) {
-            printf("%.2f ", array[i+k]);
+    if (k == 0) {
+        for (int i = 0; i < 10 ; i++) {
+            printf("%.2f ", array[i]);
+        } 
+    }
+    if (k > 0) {
+        for (int i = 10 - k; i < 10 ; i++) {
+            printf("%.2f ", array[i]);
         }
-        for (int i = 0; i < 10 - k; i++){
+        for (int i = 0; i < 10 - k; i++) {
             printf("%.2f ", array[i]);
         }
     } 
-    
-    else {
+    if (k < 0) {
         for (int i = abs(k); i < 10; i++) {
             printf("%.2f ", array[i]);
         }
-        for (int i = 0; i < abs(k); i++){
+        for (int i = 0; i <= abs(k) - 1; i++) {
             printf("%.2f ", array[i]);
         }
-    }
+    } 
     return 0;
 }
