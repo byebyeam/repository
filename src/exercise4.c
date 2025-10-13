@@ -11,12 +11,12 @@ int main(int argc, char** argv) {
     }
 
     for (int i = 0; i < k; i++) {
-        printf("%.1f ", array[i]);
+        printf("%.0f ", array[i]);
     }
-    printf("%.1f ", x);
+    printf("%.0f ", x);
 
     for (int i = k; i < 9; i++) {
-        printf("%.1f ", array[i]);
+        printf("%.0f ", array[i]);
     }
 
     return 0;
