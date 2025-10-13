@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char** argv) {
-    int k = atoi(argv[1]);
+    int k = atof(argv[1]);
     double array[10];
 
     for (int i = 0; i < 10; i++) {
