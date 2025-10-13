@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 int main(int argc, char** argv) {
-    double x = atoi(argv[2]);
-    int k = atoi(argv[1]);
+    double x = atoi(argv[1]);
+    int k = atoi(argv[2]);
     double array[10];
 
     for (int i = 0; i < 10; i++) {
