@@ -37,7 +37,33 @@ int max_subarray_sum(int* nums, int size) {
 }
 
 int length_of_lis(int* nums, int numsSize) {
-    return 0;
+    int lis = 1;
+    int cur_lis = 1;
+
+    if (numsSize == 0) {
+        return 0;
+    }
+
+    else if (numsSize == 1) {
+        return 1;
+    }
+
+    if (numsSize > 1) {
+        for (int i = 0; i < numsSize - 1; i++) {
+            for (int j = i + 1; j < numsSize; j++) {
+                if (nums[j] > nums[j-1]) {
+                    cur_lis += 1;
+                    if (cur_lis > lis) {
+                        lis = cur_lis;
+                    }
+                }
+                else { break; }
+            }
+            cur_lis = 1;
+        }
+    }
+
+    return lis;
 }
 
 int* merge(int* intervals, int intervalsSize, int* returnSize) {
